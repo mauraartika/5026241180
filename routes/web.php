@@ -22,3 +22,26 @@ Route::get('pert5', function () {
 Route::get('dosen', [DosenController::class, 'index']);
 
 Route::get('biodata', [DosenController::class, 'biodata']);
+
+//tugas pertemuan 8
+
+Route::get('intro_pert1', [DosenController::class, 'intro']);
+
+Route::get('news', [DosenController::class, 'news']);
+
+Route::get('news1', [DosenController::class, 'news1']);
+
+Route::get('5026241180', [DosenController::class, 'nrp']);
+
+Route::get('contoh', [DosenController::class, 'contoh']);
+
+Route::get('responsive', [DosenController::class, 'responsive']);
+
+Route::get('template', [DosenController::class, 'template']);
+
+Route::get('index_pertemuan5', [DosenController::class, 'index_pertemuan5']);
+
+Route::get('linktree', [DosenController::class, 'linktree']);
+
+
+
