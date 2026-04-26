@@ -23,7 +23,7 @@ Route::get('dosen', [DosenController::class, 'index']);
 
 Route::get('biodata', [DosenController::class, 'biodata']);
 
-//tugas pertemuan 8
+//tugas pertemuan 7
 
 Route::get('intro_pert1', [DosenController::class, 'intro']);
 
