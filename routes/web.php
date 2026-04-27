@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DosenController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\PegawaiController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -44,4 +47,9 @@ Route::get('index_pertemuan5', [DosenController::class, 'index_pertemuan5']);
 Route::get('linktree', [DosenController::class, 'linktree']);
 
 
-
+//pertemuan 9 (zooom)
+//blog
+Route::get('/blog9', [BlogController::class, 'home']);
+Route::get('/blog9/tentang', [BlogController::class, 'tentang']);
+Route::get('/blog9/kontak', [BlogController::class, 'kontak']);
+Route::get('/pegawai', [PegawaiController::class, 'formulir']);
