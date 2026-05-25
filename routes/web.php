@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DosenController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\PegawaiDBController;
 
 
 Route::get('/', function () {
@@ -52,4 +53,16 @@ Route::get('linktree', [DosenController::class, 'linktree']);
 Route::get('/blog9', [BlogController::class, 'home']);
 Route::get('/blog9/tentang', [BlogController::class, 'tentang']);
 Route::get('/blog9/kontak', [BlogController::class, 'kontak']);
-Route::get('/pegawai', [PegawaiController::class, 'formulir']);
+Route::get('/pegawai/edit', [PegawaiController::class, 'formulir']);
+
+
+//pertemuan 11 dan 13 (CRUD tabel pegawai)
+// Route::get ()
+Route::get('/pegawai2', [PegawaiDBController::class,'index']);
+Route::get('/pegawai2tambah', [PegawaiDBController::class,'tambah']);
+Route::post('/pegawai2store', [PegawaiDBController::class,'store']);
+Route::get('/pegawai2edit/{id}', [PegawaiDBController::class,'edit']);
+Route::post('/pegawai2update', [PegawaiDBController::class,'update']);
+Route::get('/pegawai2hapus/{id}', [PegawaiDBController::class,'hapus']);
+Route::get('/pegawai2cari', [PegawaiDBController::class,'cari']);
+
