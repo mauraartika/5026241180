@@ -5,6 +5,7 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\NilaiKuliahController;
 
 
 Route::get('/', function () {
@@ -65,4 +66,9 @@ Route::get('/pegawai2edit/{id}', [PegawaiDBController::class,'edit']);
 Route::post('/pegawai2update', [PegawaiDBController::class,'update']);
 Route::get('/pegawai2hapus/{id}', [PegawaiDBController::class,'hapus']);
 Route::get('/pegawai2cari', [PegawaiDBController::class,'cari']);
+
+//latihan eas
+Route::get('nilaikuliah', [NilaiKuliahController::class, 'index_nilai']);
+Route::get('nilaikuliah/tambah', [NilaiKuliahController::class, 'tambah_nilai']);
+Route::post('nilaikuliah/store', [NilaiKuliahController::class, 'store_nilai']);
 
