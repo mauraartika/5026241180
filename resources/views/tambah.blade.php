@@ -1,5 +1,5 @@
 <!-- Menghubungkan dengan view template master -->
-@extends('template2')
+@extends('template_siswa_pert14')
 
 @section('title', 'Tambah Pegawai')
 <!-- isi bagian konten -->

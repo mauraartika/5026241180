@@ -1,4 +1,4 @@
-@extends('template')
+@extends('template_siswa_pert14')
 @section('title', 'Data Pegawai')
 @section('konten')
 

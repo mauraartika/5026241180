@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>5026241129 Gading Putra Priyanto</title>
+    <title>5026241180 Maura Artika Tamadhipta</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,23 +14,26 @@
 
     <div class="container">
         <div class="mt-4 p-5 bg-primary text-white rounded">
-            <h3>5026241129 Gading Putra Priyanto</h3>
+            <h3>5026241180 Maura Artika Tamadhipta</h3>
             <h6>@yield('title')</h6>
         </div>
         <nav class="navbar navbar-expand-sm bg-light navbar-light">
             <div class="container-fluid">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="/pegawai">Pegawai</a>
+                        <a class="nav-link" href="/pegawai2">Pegawai</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/meja">Meja</a>
+                        <a class="nav-link" href="/siswa">Siswa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">PR 2</a>
+                        <a class="nav-link" href="/nilaikuliah">Nilai Kuliah</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">PR 3</a>
+                        <a class="nav-link" href="/keranjangbelanja">Keranjang Belanja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/flashdisk">Pra EAS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">EAS</a>

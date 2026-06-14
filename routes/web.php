@@ -6,6 +6,9 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\NilaiKuliahController;
+use App\Http\Controllers\BelanjaController;
+use App\Http\Controllers\SiswaController;
+use App\Http\Controllers\FlashdiskController;
 
 
 Route::get('/', function () {
@@ -67,8 +70,27 @@ Route::post('/pegawai2update', [PegawaiDBController::class,'update']);
 Route::get('/pegawai2hapus/{id}', [PegawaiDBController::class,'hapus']);
 Route::get('/pegawai2cari', [PegawaiDBController::class,'cari']);
 
-//latihan eas
+//pertemuan 14
+Route::get('/siswa', [SiswaController::class, 'siswa_index'])->name('siswa.index');
+Route::get('/siswa/create', [SiswaController::class, 'siswa_create'])->name('siswa.create');
+Route::post('/siswa', [SiswaController::class, 'store'])->name('siswa.store');
+Route::get('/siswa/{nrp}/edit', [SiswaController::class, 'siswa_edit'])->name('siswa.edit');
+Route::put('/siswa/{nrp}', [SiswaController::class, 'update'])->name('siswa.update');
+Route::delete('/siswa/{nrp}', [SiswaController::class, 'destroy'])->name('siswa.destroy');
+
+//latihan eas perempuan
 Route::get('nilaikuliah', [NilaiKuliahController::class, 'index_nilai']);
 Route::get('nilaikuliah/tambah', [NilaiKuliahController::class, 'tambah_nilai']);
 Route::post('nilaikuliah/store', [NilaiKuliahController::class, 'store_nilai']);
+//latihan eas laki-laki
+Route::get('keranjangbelanja', [BelanjaController::class, 'index_belanja']);
+Route::get('keranjangbelanja/tambah', [BelanjaController::class, 'tambah_belanja']);
+Route::post('keranjangbelanja/simpan', [BelanjaController::class, 'simpan_belanja']);
+Route::get('keranjangbelanja/hapus/{id}', [BelanjaController::class, 'hapus_belanja']);
+
+//pra eas - flashdisk
+Route::get('flashdisk', [FlashdiskController::class, 'index_flashdisk']);
+Route::get('flashdisk/tambah', [FlashdiskController::class, 'tambah_flashdisk']);
+Route::post('flashdisk/store', [FlashdiskController::class, 'store_flashdisk']);
+Route::get('flashdisk/hapus/{kodeflashdisk}', [FlashdiskController::class, 'hapus_flashdisk']);
 

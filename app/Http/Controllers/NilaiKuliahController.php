@@ -29,4 +29,5 @@ class NilaiKuliahController extends Controller
 
         return redirect('/nilaikuliah');
     }
+
 }

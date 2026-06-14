@@ -1,5 +1,5 @@
 <!-- Menghubungkan dengan view template master -->
-@extends('template2')
+@extends('template_siswa_pert14')
 
 @section('title', 'Data Pegawai')
 
@@ -13,6 +13,7 @@
     	<p>Cari Data Pegawai :</p>
 	<form action="/pegawai2cari" method="GET">
 		<input type="text" name="cari" placeholder="Cari Pegawai .." class="form-control">
+        <br>
 		<input type="submit" value="CARI" class="btn btn-secondary">
 	</form>
 

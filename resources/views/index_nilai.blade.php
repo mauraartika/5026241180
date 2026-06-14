@@ -1,6 +1,6 @@
-@extends('template3')
+@extends('template_siswa_pert14')
 
-@section('title', 'Data Nilai Kuliah')
+@section('title', 'Data Nilai Kuliah Pertemuan 15')
 
 @section('konten')
 

@@ -8,15 +8,15 @@ use Illuminate\Validation\Rule;
 
 class SiswaController extends Controller
 {
-    public function index()
+    public function siswa_index()
     {
         $siswa = DB::table('siswa')->orderBy('NRP')->get();
-        return view('siswa.index', compact('siswa'));
+        return view('siswa_index', compact('siswa'));
     }
 
-    public function create()
+    public function siswa_create()
     {
-        return view('siswa.create');
+        return view('siswa_create');
     }
 
     public function store(Request $request)
@@ -38,7 +38,7 @@ class SiswaController extends Controller
         return redirect()->route('siswa.index')->with('success', 'Data siswa berhasil ditambahkan.');
     }
 
-    public function edit($nrp)
+    public function siswa_edit($nrp)
     {
         $siswa = DB::table('siswa')->where('NRP', $nrp)->first();
 
