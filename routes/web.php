@@ -9,7 +9,7 @@ use App\Http\Controllers\NilaiKuliahController;
 use App\Http\Controllers\BelanjaController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\FlashdiskController;
-
+use App\Http\Controllers\NilaiPesertaController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -94,3 +94,7 @@ Route::get('flashdisk/tambah', [FlashdiskController::class, 'tambah_flashdisk'])
 Route::post('flashdisk/store', [FlashdiskController::class, 'store_flashdisk']);
 Route::get('flashdisk/hapus/{kodeflashdisk}', [FlashdiskController::class, 'hapus_flashdisk']);
 
+//eas
+Route::get('eas', [NilaiPesertaController::class, 'eas_index']);
+Route::get('eas/tambah', [NilaiPesertaController::class, 'eas_tambah']);
+Route::post('eas/simpan', [NilaiPesertaController::class, 'eas_simpan']);
